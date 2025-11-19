@@ -3,10 +3,6 @@ class Template
 {
     public static function getInstance(): Template
     {
-        /*static $instance = null;
-        if (is_null($instance)) {
-            $instance = new Template();
-        }*/
         $instance = new Template();
         return $instance;
     }

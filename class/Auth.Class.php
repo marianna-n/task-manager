@@ -1,7 +1,5 @@
 <?php
 
-//declare(strict_types=1);
-
 class Auth
 {
     public ?object $mysql;
@@ -27,7 +25,7 @@ class Auth
         $email = trim($email);
         $stmt = $this->mysql->prepare("SELECT * FROM users WHERE email = ?");
         $stmt->execute([$email]);
-        //var_dump($row = $stmt->fetch());
+
         if ($row = $stmt->fetch()) {
             if (!password_verify($password, $row['password'])) {
                 $_SESSION['errors'] = 'Wrong email or password';
@@ -36,9 +34,7 @@ class Auth
         } else {
             $_SESSION['errors'] = 'Wrong email or password';
             return false;
-        }
-
-        //var_dump($row);
+        } 
 
         foreach ($row as $key => $value) {
             if ($key != 'password') {

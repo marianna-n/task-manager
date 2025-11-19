@@ -35,7 +35,6 @@ class Task
 
     public function getStatusesList()
     {
-        //$data = [];
         $sql = "SELECT * FROM statuses";
         $statusList = $this->mysql->completeQuery($sql);
         echo json_encode($statusList, JSON_UNESCAPED_UNICODE);

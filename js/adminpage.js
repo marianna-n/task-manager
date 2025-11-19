@@ -52,7 +52,6 @@ $(document).ready(function () {
     $('#task_table').on('click', '.task-about', function () {
         let tr = $(this).closest('tr');
         let rowData = task_table.row(tr).data();
-        console.log(rowData);
         $('#task_id').val(rowData.id);
         $('#title').html(rowData.title);
         $('#name').html(rowData.name);
