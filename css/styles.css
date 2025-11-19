@@ -44,7 +44,7 @@
     border: 1px solid #dcdcde;
     position: absolute;
     left: calc(50% - 450px);
-    top: 100px;
+    top: 15px;
     z-index: 10400;
     max-width: 1000px;
     width: 900px;
