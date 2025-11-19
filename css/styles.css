@@ -77,6 +77,12 @@ h3 .flex-1 {
     position: relative;
 }
 
-.td-id {
+.td-id,
+#filter_id {
     max-width: 60px;
+    width: 60px;
+}
+
+#filter_id {
+    width: 50px;
 }
