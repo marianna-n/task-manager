@@ -1,0 +1,82 @@
+.wrapper {
+    margin: 30px;
+}
+
+.create-task {
+    border: 1px solid rgb(199, 199, 199);
+    padding: 10px;
+}
+
+.footer-dataTable {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.length-block,
+.infoPage-block,
+.paginate-block {
+    flex: 1;
+    text-align: center;
+}
+
+.length-block {
+    padding-top: 0.755em;
+    text-align: left;
+}
+
+#task-popup-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    display: none;
+}
+
+.task-modal-block {
+    background-color: white;
+    padding: 20px;
+    padding-top: 20px;
+    padding-top: 5px;
+    border: 1px solid #dcdcde;
+    position: absolute;
+    left: calc(50% - 450px);
+    top: 100px;
+    z-index: 10400;
+    max-width: 1000px;
+    width: 900px;
+}
+
+.task-modal-block h3 {
+    display: flex;
+    font-size: 16px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.close-task-settings {
+    cursor: pointer;
+    font: caption;
+    font-weight: bold;
+}
+
+h3 .flex-1 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#form-message {
+    margin-left: 15px;
+    color: red;
+    top: 10px;
+    position: relative;
+}
+
+.td-id {
+    max-width: 60px;
+}
